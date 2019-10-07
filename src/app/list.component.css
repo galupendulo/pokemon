@@ -1,0 +1,28 @@
+
+.tile {
+  float: left;
+  width: 220px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 40px;
+  min-height: 220px;
+  text-align: center;
+  line-height: 220px;
+  background-color: #eee;
+}
+.tile:hover {
+  background-color: #f5f5cd;
+}
+ul {
+list-style-type: none;
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin: 0 20px;
+  }
+  .tile {
+    float: none;
+    width: auto;
+  }
+}

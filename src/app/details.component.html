@@ -1,0 +1,8 @@
+<div *ngIf="pokemon">
+    <h2>{{ pokemon.name | uppercase }} details: </h2>
+    <p>ID: {{pokemon.id}}</p>
+    <p>NAME: {{pokemon.name}}</p>
+    <stats-comp [height]="pokemon.height" [weight]="pokemon.weight"></stats-comp>
+    <img [src]="pokemon.sprites.front_default">
+      <p>{{pokemon.evolves_from}}</p>
+</div>
